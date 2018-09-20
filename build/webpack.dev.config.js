@@ -2,7 +2,7 @@ const webpack = require('webpack');
 // const path = require('path');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-let config = require('./webpack.common.config');
+let config = require('./webpack.com.config');
 config = {
   ...config,
   mode: 'development'
