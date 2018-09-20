@@ -1,4 +1,4 @@
 export default {
-    enthusiasmLevel: 1,
-    languageName: 'TypeScript',
-  }
+  enthusiasmLevel: 1,
+  languageName: 'TypeScript',
+};
