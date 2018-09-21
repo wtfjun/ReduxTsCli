@@ -14,10 +14,21 @@ module.exports = {
   },
 
   module: {
-    rules: [
-      { test: /\.tsx?$/, loader: 'ts-loader' },
-
-      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' }
+    rules: [{
+      test: /\.tsx?$/,
+      loader: 'ts-loader'
+    }, {
+      enforce: 'pre',
+      test: /\.js$/,
+      loader: 'source-map-loader'
+    }, {
+      test: /\.less$/,
+      use: [
+        'style-loader',
+        { loader: 'css-loader', options: { importLoaders: 1 }},
+        'less-loader'
+      ]
+    }
     ]
   },
 

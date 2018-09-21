@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
+import Header from './layouts/Header';
 import Hello from './redux/containers/Hello';
 import Home from './components/Home';
 import configureStore from './redux/store/configureStore';
@@ -11,6 +12,7 @@ const store = configureStore();
 const RouterPage = () => (
   <Router>
     <div>
+      <Header />
       <ul>
         <li>
           <Link to="/">Home</Link>
