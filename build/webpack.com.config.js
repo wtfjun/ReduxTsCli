@@ -23,13 +23,8 @@ module.exports = {
       loader: 'source-map-loader'
     }, {
       test: /\.less$/,
-      use: [
-        'style-loader',
-        { loader: 'css-loader', options: { importLoaders: 1 }},
-        'less-loader'
-      ]
-    }
-    ]
+      use: ['style-loader', 'css-loader', 'less-loader']
+    }]
   },
 
   plugins: [

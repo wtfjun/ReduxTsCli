@@ -1,0 +1,34 @@
+.header-sibar {
+    position: fixed;
+    right: 50px;
+    li {
+        float: left;
+        list-style: none;
+        // margin: 0 10px;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        background: #fff;
+    }
+    li:hover {
+        background: #ebebeb;
+    }
+    li a {
+        text-decoration: none;
+        font-family: "lft","Helvetica Neue",Helvetica,Arial,sans-serif;
+        line-height: 50px;
+        // font-size: 18px;
+        display: block;
+        color: #212121;
+    }
+    li.active {
+        background: #212121;
+        -webkit-mask-image: url(https://viljamis.com/img/mask-eea06722.png);
+        -webkit-mask-size: 200%;
+        -webkit-mask-repeat: repeat;
+        box-shadow: inset 0 0 14px 0 rgba(255,255,255,0.25);
+    }
+    li.active a {
+        color: #fff;
+    }
+}

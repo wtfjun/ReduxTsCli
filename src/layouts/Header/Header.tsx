@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import Sibar from '../../components/Sibar/Sibar';
+
 import './Header.less';
 
 export interface Props {
@@ -15,7 +17,10 @@ export default class Header extends React.Component<Props, {}> {
 
     return (
       <div className="header">
-        header
+        {/* <div dangerouslySetInnerHTML={WEB_SVG}></div> */}
+        {/* <img alt="" src="https://viljamis.com/img/header/web-abb69c1c.svg" /> */}
+        {/* <svg /> */}
+        <Sibar />
       </div>
     );
   }
