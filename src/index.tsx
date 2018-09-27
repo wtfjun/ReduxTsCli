@@ -6,7 +6,8 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 import Header from './layouts/Header/Header';
 import Hello from './redux/containers/Hello';
 import Home from './components/Home';
-import Archive from './components/ArticleList/ArticleList';
+import Archive from './redux/containers/ArticleList';
+import Article from './components/Article/Article';
 import configureStore from './redux/store/configureStore';
 const store = configureStore();
 
@@ -19,6 +20,7 @@ const RouterPage = () => (
       <Route exact path="/" component={Home} />
       <Route path="/hello" component={Hello} />
       <Route path="/archive" component={Archive} />
+      <Route path="/article/:id" component={Article} />
     </React.Fragment>
   </Router>
 );

@@ -1,23 +1,21 @@
 import * as constants from '../../constants';
 
-export interface IncrementEnthusiasm {
-  type: constants.INCREMENT_ENTHUSIASM_TYPE;
-}
 
-export interface DecrementEnthusiasm {
-  type: constants.DECREMENT_ENTHUSIASM_TYPE;
-}
-
-export type EnthusiasmAction = IncrementEnthusiasm | DecrementEnthusiasm;
-
-export function incrementEnthusiasm(): IncrementEnthusiasm {
+export function incrementEnthusiasm() {
   return {
     type: constants.INCREMENT_ENTHUSIASM
   };
 }
 
-export function decrementEnthusiasm(): DecrementEnthusiasm {
+export function decrementEnthusiasm() {
   return {
     type: constants.DECREMENT_ENTHUSIASM
+  };
+}
+
+export function getArticlesListAction(data: any) {
+  return {
+    type: 'GET_ARTICLES_LIST_ACTION',
+    data
   };
 }
